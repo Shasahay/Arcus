@@ -1,0 +1,8 @@
+﻿@model Arcus.Web.Infra.ViewModels.HomePageViewModel
+@{
+    ViewBag.Title = "Arcus Associates";
+}
+
+@Html.Partial("_Header",Model.Header)
+@Html.Partial("_CategoryPage", Model.MainPage)
+@Html.Partial("_Footer", Model.Footer)

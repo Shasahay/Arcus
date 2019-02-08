@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    
+</head>
+<body class="arc-body-layout">
+    <div id="" class="top">
+        <div>
+            <div class="r-small-flip r-bck-blue r-small-flip-icon"></div>
+            <div class="r-large-flip bg-color-saffron bg-image bg-icon r-large-flip-icon"></div>
+        </div>
+    </div>
+    <div class="container body-content body-layout" >
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Arcus Associates</p>
+            <div class="right" style="float:right"> Provided and designed by <a href="">Shashank Sahay</a></div>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

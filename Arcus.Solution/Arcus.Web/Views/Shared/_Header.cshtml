@@ -1,0 +1,66 @@
+﻿@model Arcus.Web.Infra.ViewModels.HeaderViewModel
+<div class="bs-example bs-layout">
+    <ul class="nav nav-tabs">
+        @for (var i = 0; i < Model.Navigations.Count; i++)
+        {
+            var currentTab = string.Empty;
+            var cat = Model.Navigations;
+            //if (Model.CurrentCategoryId > 0 && Model.CurrentCategoryId == cat.Id)
+            if (Model.CurrentCategoryName == Model.Categories.ElementAt(i).Name)
+            {
+                currentTab = "active";
+            }
+
+            //if (Model.Navigations.ElementAt(i).SubCategories.ElementAt(0) != null && Model.Navigations.ElementAt(i).SubCategories.Select(x => x.Name.Equals(Model.CurrentCategoryName)).FirstOrDefault() != null)
+            //{
+            //    currentTab = "active";
+            //}
+            else { }
+
+            if (Model.Navigations.ElementAt(i).SubCategories.ElementAt(0) != null)
+            {
+
+                if (Model.Navigations.ElementAt(i).SubCategories.Where(x => x.Name == Model.CurrentCategoryName).Count() >= 1)
+                { currentTab = "active"; }
+                //if (string.Equals(Model.CurrentCategoryName, "NotesZone") || string.Equals(Model.CurrentCategoryName, "HR Services"))
+                //{ currentTab = "active"; }
+                <li class="dropdown   @currentTab">
+                    @Html.ActionLink(Model.Navigations.ElementAt(i).Category.Name, "Category", "Home", new { categoryName = Model.Navigations.ElementAt(i).Category.Name }, new { @class = "dropdown-toggle txt-white r-bck-blue", @data_toggle = "dropdown" })
+                    <ul class="dropdown-menu r-bck-lgtblue">
+                        @for (var j = 0; j < Model.Navigations.ElementAt(i).SubCategories.Count; j++)
+                        {
+                            <li>
+                                @Html.ActionLink(Model.Navigations.ElementAt(i).SubCategories.ElementAt(j).Name, "Category", "Home", new { categoryName = Model.Navigations.ElementAt(i).SubCategories.ElementAt(j).Name }, new { @class = "txt-white r-bck-lgtblue" })
+                            </li>
+                        }
+                    </ul>
+                </li>
+            }
+            else
+            {
+                <li class="@currentTab">
+                    @Html.ActionLink(Model.Navigations.ElementAt(i).Category.Name, "Category", "Home", new { categoryName = Model.Navigations.ElementAt(i).Category.Name }, new { @class = "txt-white r-bck-blue" })
+                </li>
+            }
+        }
+
+        @*<li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Messages <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Inbox</a></li>
+                    <li><a href="#">Drafts</a></li>
+                    <li><a href="#">Sent Items</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Trash</a></li>
+                </ul>
+            </li>*@
+
+    </ul>
+</div>
+
+
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/Scripts/bootstrap.min.js")

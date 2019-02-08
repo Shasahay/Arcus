@@ -1,0 +1,14 @@
+﻿@model Arcus.Web.Infra.ViewModels.FooterViewModel
+<div id="footer" class="r-bck-blue txt-white r-marginT10 r-PaddingT10" style="padding-left:5em">
+    <div class="left">
+        &copy; 2016-2017 Arcus Associates <span class="text-separator"></span>
+        @foreach (var cat in Model.Categories)
+        {
+            <span class="text-separator">|</span>
+            <a href="#" class="txt-white">@cat.Name</a>
+        }
+    </div>
+    @*<div class="right" style="float:right"> Provided and designed by Arcus Group <a href="">Shashank Sahay</a></div>*@
+    <div class="clearer">&nbsp;</div>
+</div>
+

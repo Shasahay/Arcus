@@ -1,0 +1,208 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover
+{
+    background-color:#D1E5EE!important;
+}
+
+.bg-color-red{
+    background-color :#C80554!important;
+}
+.bg-color-saffron{
+    background-color :#F16A0E!important;
+}
+.bg-color-yellow{
+    background-color: #D9AF0B!important;
+}
+
+.r-bck-blue{
+    background-color: #3E5368; /*#1969A4;*/
+}
+.right{
+    float:right;
+}
+.r-bck-lgtblue{
+    background-color: #86B2D7;
+}
+.body-layout{
+    background-color: #86B2D7;
+}
+.container-layout{
+    background-color: #D1E5EE;
+}
+.nav-tabs-clr{
+    background-color: #1969A4;
+}
+.widget-style{
+padding-left: 1em;
+background-color: #FF9C5F;
+}
+.widget-style h3{
+background-color: #E7512D;
+color: white;
+}
+.txt-white {
+color:#FFFFFF;
+}
+.r-txt-white {
+color:#FFFFFF;
+}
+.r-txt-white:hover{
+    color:#D9AF0B;
+}
+.advisertisement-style{
+padding-left: 1em;
+background-color: #DDD4B6
+}
+.advisertisement-style h3{
+color: white;
+background-color: #707070
+}
+.announcement-style{
+padding-left: 1em;
+background-color: #92DCE0;
+}
+.arc-body-layout{
+    background-color: #86B2D7;
+}
+.announcement-style h3{
+background-color: #428F89;
+color: white
+}
+.r-marginT30{
+    margin-top: 30px;
+}
+.r-marginT1{
+margin-top:1px;
+}
+.r-box-style{
+border-radius:6px 6px 6px 6px;
+box-shadow: 8px 8px 10px 3px rgba(0,0,0,0.2);
+}
+.detailsfloatingcontent{
+    width: auto;
+    float: left;
+    position: relative;
+    padding: 15px 15px 15px 15px;
+    box-sizing: border-box;
+    background-color: #D9AF0B; /*#F8F7F2;*/
+    box-shadow: -8px 8px 10px 3px rgba(0,0,0,0.2);
+    border-style:none;
+    border-radius:6px 6px 6px 6px;
+}
+
+.detailsmaincontent{
+    width: 33.33%;
+    float: left;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+.detailsitem{
+    background-color: #3E5368; /*#4B7794;*/
+    position: relative;
+    color: #FFFFFF;
+}
+.r-PaddingT10{
+    padding-top:10px;
+}
+.r-bold{
+font-weight:700;
+}
+.r-h4{
+    font-family:MyriadPro-Regular;
+    font-weight:400
+}
+.r-marginB10{
+    margin-bottom: 10px;
+}
+.r-marginT10{
+    margin-top: 10px;
+}
+.mc-title-info{
+    padding: 25px 28px 30px 70px;
+    min-height: 100px;
+}
+.lgt-blue-button {
+        padding: 5px;
+        background-color: #CBD7E3;
+        color:#939EB4;
+        box-shadow: -8px 8px 10px 3px rgba(0,0,0,0.2);
+        font-weight: bold;
+        font-size: 8pt;
+        text-decoration: none;
+        border-style:none;
+        border-radius:6px 6px 6px 6px;
+        font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+
+.lgt-blue-button:hover {
+        background-color: #D9AF0B;
+        color:#000;
+    }
+
+.post-title h2{
+    padding-left: 1em;
+}
+.post-srtDesc p{
+    padding-left: 4em;
+    padding-right:2em;
+}
+.post-body p{
+    padding-left: 4em;
+    padding-right: 2em;
+}
+.r-small-flip{
+    width: 70px; height: 35px; margin-top: 15px; margin-bottom: -43px; margin-left: -90px; 
+}
+
+.r-large-flip{
+    border-width: 1px; border-style: solid; border-radius: 0px 10px 10px 0px;
+     width: 900px; height: 30px; margin-left: -47px; z-index: 100; 
+     box-shadow: 8px 15px 12px 3px rgba(0,0,0,0.5); 
+}
+.bg-image{
+    background-image:url(img/Picture5.png);
+    background-repeat:no-repeat;
+}
+
+.bs-layout{
+    margin-top: -50px;
+    margin-left:50px;
+}
+.bg-icon{
+    height:110px;
+    margin-top:-106px;
+    margin-left:40px;
+}
+.r-small-flip-icon{
+    margin-left:0px!important;
+    height:100px;
+}
+.r-large-flip-icon{
+    width:500px!important;
+    margin-top:-104px!important;
+}

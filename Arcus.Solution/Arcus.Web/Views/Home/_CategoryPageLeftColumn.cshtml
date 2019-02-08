@@ -1,0 +1,20 @@
+﻿@model Arcus.Web.Infra.ViewModels.CategoryLeftColumnViewModel
+
+<div class="post">
+    <div class="row">
+        @foreach (var item in Model.Items)
+        {
+            <div class="detailsmaincontent">
+                <div class="detailsitem r-marginT30">
+                    <div class="mc-title-info">
+                        <h4 class="r-bold r-marginB10">@Html.ActionLink(@item.ItemContent.Title, "Details", "Home", new { id = item.Id }, new { @class = "r-txt-white" })</h4>
+                        <h4 class="r-h4"> @item.ItemContent.SortDescription</h4>
+                        @*<a class="btn pull-right" href="#">Read More!</a>*@
+                        @Html.ActionLink("Read more >>", "Details", "Home", new { id = item.Id }, new { Class = "right lgt-blue-button r-marginT10" })
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+</div>

@@ -1,0 +1,23 @@
+﻿@model Arcus.Web.Infra.ViewModels.DetailsLeftColumnViewModel
+<div id="main-left" class="left">
+    <div class="post">
+        <div class="post-title">
+            <h2>
+                @Html.Raw(@Model.CurrentItem.ItemContent.Title)
+            </h2>
+        </div>
+        <div class="post-srtDesc">
+            <p>
+                @Html.Raw(@Model.CurrentItem.ItemContent.SortDescription)
+            </p>
+
+        </div>
+        <div class="post-body">
+            <p>
+                @Html.Raw(@Model.CurrentItem.ItemContent.Content)
+            </p>
+
+        </div>
+
+    </div>
+</div>

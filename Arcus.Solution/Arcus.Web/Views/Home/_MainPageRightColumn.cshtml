@@ -1,0 +1,32 @@
+﻿@model Arcus.Web.Infra.ViewModels.MainPageRightColumnViewModel
+<div class="detailsfloatingcontent">
+    <div class="detailsitem r-marginT1 bg-color-yellow">
+        @foreach (var item in Model.WidgetItems)
+        {
+            <div class="mc-title-info">
+                <h4 class="r-bold r-marginB10">@item.ItemContent.Title</h4>
+                <h4 class="r-h4"> @item.ItemContent.Content</h4>
+            </div>
+        }
+    </div>
+    <div class="detailsitem r-marginT1 bg-color-saffron r-box-style">
+        @foreach (var item in Model.AdvertisementItems)
+        {
+            <div class="mc-title-info">
+                <h4 class="r-bold r-marginB10">@item.ItemContent.Title</h4>
+                <h4 class="r-h4"> @item.ItemContent.Content</h4>
+            </div>
+        }
+    </div>
+
+    <div class="detailsitem r-marginT1 bg-color-red" style="margin-top:15px;border-radius:6px 6px 6px 6px">
+        @foreach (var item in Model.AnnouncementItems)
+        {
+            <div class="mc-title-info">
+                <h4 class="r-bold r-marginB10">@item.ItemContent.Title</h4>
+                <h4 class="r-h4"> @item.ItemContent.Content</h4>
+            </div>
+        }
+    </div>
+
+</div> 

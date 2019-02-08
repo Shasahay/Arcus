@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{B3285754-5868-417D-A109-A20CF0391084}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{9B3B283C-145A-4352-B230-58DB9DD4E9B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{C84B037B-1D5D-44C5-811C-B058EDD0866D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arcus.Domain", "Arcus.Domain\Arcus.Domain.csproj", "{59A8E1EE-2B3F-4855-AF54-999FDB109155}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arcus.DataAccess", "Arcus.DataAccess\Arcus.DataAccess.csproj", "{6FF25F8A-3C44-4552-B9AA-5BBCA5AA26A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arcus.Web.Infra", "Arcus.Web.Infra\Arcus.Web.Infra.csproj", "{71065F34-1870-47DC-BCA5-C1E236FA24C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arcus.Web", "Arcus.Web\Arcus.Web.csproj", "{17BF8E58-4AC2-459B-96F8-DB0958910BC9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DBQuery", "DBQuery", "{AE468115-A73C-4813-ABC2-8B590CD05C90}"
+	ProjectSection(SolutionItems) = preProject
+		DBInsert.sql = DBInsert.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://projshanky.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Arcus.DataAccess\\Arcus.DataAccess.csproj
+		SccProjectTopLevelParentUniqueName1 = Arcus.Solution.sln
+		SccProjectName1 = Arcus.DataAccess
+		SccLocalPath1 = Arcus.DataAccess
+		SccProjectUniqueName2 = Arcus.Domain\\Arcus.Domain.csproj
+		SccProjectTopLevelParentUniqueName2 = Arcus.Solution.sln
+		SccProjectName2 = Arcus.Domain
+		SccLocalPath2 = Arcus.Domain
+		SccProjectUniqueName3 = Arcus.Web.Infra\\Arcus.Web.Infra.csproj
+		SccProjectTopLevelParentUniqueName3 = Arcus.Solution.sln
+		SccProjectName3 = Arcus.Web.Infra
+		SccLocalPath3 = Arcus.Web.Infra
+		SccProjectUniqueName4 = Arcus.Web\\Arcus.Web.csproj
+		SccProjectTopLevelParentUniqueName4 = Arcus.Solution.sln
+		SccProjectName4 = Arcus.Web
+		SccLocalPath4 = Arcus.Web
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59A8E1EE-2B3F-4855-AF54-999FDB109155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59A8E1EE-2B3F-4855-AF54-999FDB109155}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59A8E1EE-2B3F-4855-AF54-999FDB109155}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59A8E1EE-2B3F-4855-AF54-999FDB109155}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FF25F8A-3C44-4552-B9AA-5BBCA5AA26A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FF25F8A-3C44-4552-B9AA-5BBCA5AA26A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FF25F8A-3C44-4552-B9AA-5BBCA5AA26A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FF25F8A-3C44-4552-B9AA-5BBCA5AA26A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71065F34-1870-47DC-BCA5-C1E236FA24C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71065F34-1870-47DC-BCA5-C1E236FA24C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71065F34-1870-47DC-BCA5-C1E236FA24C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71065F34-1870-47DC-BCA5-C1E236FA24C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17BF8E58-4AC2-459B-96F8-DB0958910BC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17BF8E58-4AC2-459B-96F8-DB0958910BC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17BF8E58-4AC2-459B-96F8-DB0958910BC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17BF8E58-4AC2-459B-96F8-DB0958910BC9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{59A8E1EE-2B3F-4855-AF54-999FDB109155} = {9B3B283C-145A-4352-B230-58DB9DD4E9B6}
+		{6FF25F8A-3C44-4552-B9AA-5BBCA5AA26A8} = {B3285754-5868-417D-A109-A20CF0391084}
+		{71065F34-1870-47DC-BCA5-C1E236FA24C8} = {C84B037B-1D5D-44C5-811C-B058EDD0866D}
+		{17BF8E58-4AC2-459B-96F8-DB0958910BC9} = {C84B037B-1D5D-44C5-811C-B058EDD0866D}
+	EndGlobalSection
+EndGlobal

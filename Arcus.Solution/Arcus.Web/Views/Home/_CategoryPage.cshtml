@@ -1,0 +1,37 @@
+﻿@model Arcus.Web.Infra.ViewModels.MainPageViewModel
+
+<div class="container container-layout">
+
+    <div id="myCarousel" class="carousel slide">
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+            <div class="active item"><img src="~/Content/img/slider/1.jpg" /></div>
+            <div class="item"><img src="~/Content/img/slider/2.jpg" /></div>
+            <div class="item"><img src="~/Content/img/slider/3.jpg" /></div>
+            <div class="item"><img src="~/Content/img/slider/4.jpg" /></div>
+        </div>
+        <!-- Carousel nav  commening feeling not require (however it is working fine)-->
+        @*<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>*@
+    </div>
+
+    <div>
+        <div class="r-small-flip r-bck-blue"></div>
+        <div class="r-large-flip bg-color-saffron"></div>
+    </div>
+
+    <div class="row r-PaddingT10">
+        <div class="span8">
+            @Html.Partial("_CategoryPageLeftColumn", (Arcus.Web.Infra.ViewModels.CategoryLeftColumnViewModel)Model.LeftColumn)
+        </div>
+        <aside class="span4">
+            <div class="row r-PaddingT10"> @Html.Partial("_MainPageRightColumn", Model.RightColumn) </div>
+        </aside>
+    </div>
+</div>
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/Scripts/bootstrap.min.js")
+<script type="text/javascript">
+    $('.carousel').carousel()
+</script>
+
